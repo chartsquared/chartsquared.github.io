@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ChartAJ: Rich AI Feedback for Chart Generation">
+  <meta name="keywords" content="ChartAj, data generation, ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChartAJ: Rich AI Feedback for Chart Generation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    body {
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .box {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      .instruction-box {
+        border-left: 4px solid #3273dc;
+      }
+      .qa-box {
+        border-left: 4px solid #00d1b2;
+      }
+      .evaluation-box {
+        border-left: 4px solid #ffdd57;
+      }
+      .qa-item,
+      .evaluation-item {
+        margin-bottom: 15px;
+      }
+      .qa-question,
+      .evaluation-question {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .qa-answer {
+        margin-left: 20px;
+        color: #4a4a4a;
+      }
+      .evaluation-answer-Yes {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #3273dc;
+      }
+      .evaluation-answer-No {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #dc3532;
+      }
+      .show-answers-button {
+        margin-top: 20px;
+      }
+      .radio-Yes{
+        color: #3273dc;
+      }
+      .radio-No{
+       color: #dc3532;
+       padding-left: 20px;
+      }
+      .dropdown {
+        margin-bottom: 20px;
+        margin-right: 10px;
+      }
+      .dropdownTitle{
+        font-weight: 600;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="row is-centered">
+        <div class="row has-text-centered">
+          <h1 class="title is-1 publication-title">ChartAJ: Rich AI Feedback for Chart Generation</h1>
+          <div class="row has-text-centered">
+        </div>
+      </div>
+      <!-- Dropdowns for Gallery and Index -->
+      <div class="dropdowns">
+        <div class="dropdown">
+          <label for="gallery-select" class="dropdownTitle">Gallery</label>
+          <div class="select">
+            <select id="gallery-select">
+              <option value="d2graphgallery">d3graphgallery</option>
+              <option value="seaborn">Seaborn</option>
+              <option value="cedricscherer">CedricScherer</option>
+              <option value="datawrapper">DataWrapper</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <label for="index-select" class="dropdownTitle">Index</label>
+          <div class="select">
+            <select id="index-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Instruction Box -->
+      <div id="instruction-box" class="box instruction-box">
+        <h2 class="title is-4">Instruction</h2>
+        <p id="instruction-text">Loading instruction...</p>
+      </div>
+
+      <!-- Q&A Box -->
+      <div id="qa-box" class="box qa-box">
+        <h2 class="title is-4">Q&A</h2>
+        <div id="qa-content"></div>
+      </div>
+
+      <div class="box evaluation-box">
+        <h2 class="title is-4">Evaluation</h2>
+        <div id="evaluation-content"></div>
+        <button id="show-answers-button" class="button is-info show-answers-button">Show Answers</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    // JSON 파일 로드
+    fetch('static/data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Instruction 설정
+        document.getElementById('instruction-text').textContent = data.instruction;
+
+        // Q&A 설정
+        const qaContent = document.getElementById('qa-content');
+        data.qa.forEach((item, index) => {
+          const qaItem = document.createElement('div');
+          qaItem.className = 'qa-item';
+
+          const question = document.createElement('p');
+          question.className = 'qa-question';
+          question.textContent = `Q${index + 1}: ${item.question}`;
+
+          const answer = document.createElement('p');
+          answer.className = 'qa-answer';
+          answer.textContent = `A${index + 1}: ${item.answer}`;
+
+          qaItem.appendChild(question);
+          qaItem.appendChild(answer);
+          qaContent.appendChild(qaItem);
+        });
+
+        // Evaluation 설정
+        const evaluationContent = document.getElementById('evaluation-content');
+        data.evaluation.forEach((item, index) => {
+          const evalItem = document.createElement('div');
+          evalItem.className = 'evaluation-item';
+
+          const question = document.createElement('p');
+          question.className = 'evaluation-question';
+          question.textContent = `${index + 1}. ${item.question}`;
+
+          const control = document.createElement('div');
+          control.className = 'control';
+          
+          const yesLabel = document.createElement('label');
+          yesLabel.className = 'radio-Yes';
+          const yesInput = document.createElement('input');
+          yesInput.type = 'radio';
+          yesInput.name = `question${index}`;
+          yesInput.value = 'Yes';
+          yesLabel.appendChild(yesInput);
+          yesLabel.appendChild(document.createTextNode(' Yes'));
+
+          const noLabel = document.createElement('label');
+          noLabel.className = 'radio-No';
+          const noInput = document.createElement('input');
+          noInput.type = 'radio';
+          noInput.name = `question${index}`;
+          noInput.value = 'No';
+          noLabel.appendChild(noInput);
+          noLabel.appendChild(document.createTextNode(' No'));
+
+          control.appendChild(yesLabel);
+          control.appendChild(noLabel);
+
+          const answer = document.createElement('p');
+          answer.className = item.answer == 'Yes' ? 'evaluation-answer-Yes' : 'evaluation-answer-No';
+          answer.textContent = `GPT4o Answer: ${item.answer}`;
+          answer.style.display = 'none'; // 초기에는 숨김
+
+          evalItem.appendChild(question);
+          evalItem.appendChild(control);
+          evalItem.appendChild(answer);
+
+          evaluationContent.appendChild(evalItem);
+        });
+
+        // 'Show Answers' 버튼 기능
+        const showAnswersButton = document.getElementById('show-answers-button');
+        let answersVisible = false;
+        showAnswersButton.addEventListener('click', () => {
+          answersVisible = !answersVisible;
+          document.querySelectorAll('.evaluation-answer-Yes, .evaluation-answer-No').forEach(answer => {
+            answer.style.display = answersVisible ? 'block' : 'none';
+          });
+          showAnswersButton.textContent = answersVisible ? 'Hide Answers' : 'Show Answers';
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  </script>
+</body>
+</html>
