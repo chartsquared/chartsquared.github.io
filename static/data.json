@@ -1,71 +1,94 @@
 {
-  "instruction": "Visualize the Bundesliga 2020/21 season, showing FC Bayern Munich as the winner with 2.29 points per match, RB Leipzig in second with 1.91 points, and FC Schalke 04’s poor performance at 0.47 points per match. Highlight the top three teams and their points progression.",
-  "qa": [
+  "examples": [
     {
-      "question": "Do you have a preferred chart type for visualizing the point progression over the season (e.g., line chart, area chart)?",
-      "answer": "Line chart."
+      "exampleNumber": 1,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
     },
     {
-      "question": "What color scheme would you prefer for differentiating the top three teams and other teams in the chart?",
-      "answer": "I do not know."
+      "exampleNumber": 2,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
     },
     {
-      "question": "Would you like to include annotations or labels for key milestones or significant matches?",
-      "answer": "Yes, annotations for key milestones."
+      "exampleNumber": 3,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
     },
     {
-      "question": "Do you prefer a specific layout or aspect ratio for the chart?",
-      "answer": "I have no specific preference."
+      "exampleNumber": 4,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
     },
     {
-      "question": "Should the visualization include a legend to help identify the different teams?",
-      "answer": "Yes, a legend is important."
-    },
-    {
-      "question": "Are there any specific fonts or styles you would prefer for titles and labels?",
-      "answer": "I am not sure."
-    },
-    {
-      "question": "Would you like to highlight specific matches or events within the season on the chart?",
-      "answer": "Yes, highlight specific matches."
-    },
-    {
-      "question": "Is there a preferred way to handle missing or incomplete data points in the visualization?",
-      "answer": "I have no specific preference."
-    },
-    {
-      "question": "Are there any branding elements (like logos or team colors) that should be included in the chart?",
-      "answer": "I do not know."
-    },
-    {
-      "question": "Do you have a preference for the chart's axes (e.g., linear vs. logarithmic scale, specific date intervals)?",
-      "answer": "Linear scale is preferred."
-    }
-  ],
-  "evaluation": [
-    {
-      "question": "Is the chart type a Line Chart?",
-      "answer": "Yes"
-    },
-    {
-      "question": "Does the chart allow for easy extraction of key information without omitting significant data?",
-      "answer": "No"
-    },
-    {
-      "question": "Does the chart maintain a balance between aesthetics and clarity, limiting excessive decorative elements?",
-      "answer": "Yes"
-    },
-    {
-      "question": "Is there a legend included to help identify the different teams, with clear labeling for FC Bayern Munich, RB Leipzig, and other teams?",
-      "answer": "Yes"
-    },
-    {
-      "question": "Are the axes accurately labeled (e.g., 'Matches' on the x-axis and 'Points per Match' on the y-axis)?",
-      "answer": "Yes"
-    },
-    {
-      "question": "Does the visual representation accurately reflect the actual performances of FC Bayern Munich, RB Leipzig, and FC Schalke 04 in the Bundesliga 2020/21 season?",
-      "answer": "No"
+      "exampleNumber": 5,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
     }
   ]
 }

@@ -39,6 +39,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="example.js"></script> 
 </head>
 <body>
 
@@ -82,20 +83,13 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Yonsei,</span>
           </div> -->
-
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-links">
+              <span class="author-block">Anonymous Authors</span>
+            </div>     
+          </div>     
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/reiss-koh/PersonalEval"
                    class="external-link button is-normal is-rounded is-dark">
@@ -122,12 +116,12 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             We present the first method capable of photorealistically reconstructing a non-rigidly
@@ -165,92 +159,28 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3">Test Data Samples</h2>
+        <h2 class="title is-3 has-text-weight-bold">Qualitative Examples</h2>
+        <p>Left is the original chart generation. Right is the post-feedback generation.</p>
+        <p>The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
       </div>
     </div>
+
+    <!-- Dynamic Content Container -->
+    <div id="examples-container"></div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Chart Generation with Feedback</h2>
+<hr/>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Working Flow</h3>
-        <div class="content has-text-justified">
-          <p>
-            <a href="execute.html" class="button is-link">Try</a>
-          </p>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-          </div>
-          <div class="column is-3 has-text-centered">
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Chart after feedback</h3>
-        <div class="content has-text-centered">
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
+<section class="sectiont"></section>
+  <div class="container" style="margin: 20px auto">
+    <div class="content has-text-centered">
+      <p style="color:#a0a0a0;">Source Code and Paper are under Apache-2.0 License © Authors</p>
     </div>
-    <!--/ Animation. -->
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Benchmark Performance</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">BaseLine</h3>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-          </div>
-          <div class="column is-3 has-text-centered">
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Human Evaluation</h3>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-        </div>
-        <div class="content has-text-centered">
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-  </div>
-</section>
-
-
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -269,18 +199,13 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+
         </div>
       </div>
     </div>

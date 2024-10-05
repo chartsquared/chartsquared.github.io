@@ -1,22 +1,21 @@
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
 }
 
-
 .footer .icon-link {
-    font-size: 25px;
-    color: #000;
+  font-size: 25px;
+  color: #000;
 }
 
 .link-block a {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .dnerf {
   font-variant: small-caps;
 }
-
 
 .teaser .hero-body {
   padding-top: 0;
@@ -24,16 +23,22 @@ body {
 }
 
 .teaser {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
-
 .publication-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.example-title {
+  font-size: large;
+  font-weight: bold;
 }
 
 .publication-banner {
   max-height: parent;
-
 }
 
 .publication-banner video {
@@ -48,34 +53,34 @@ body {
 }
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
 .publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
 }
 
 .publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
 }
 
 .publication-authors {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+  color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .author-block {
@@ -90,21 +95,21 @@ body {
 }
 
 .publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
 
-    overflow: hidden;
-    border-radius: 10px !important;
+  overflow: hidden;
+  border-radius: 10px !important;
 }
 
 .publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .publication-body img {
@@ -126,7 +131,6 @@ body {
 .results-carousel video {
   margin: 0;
 }
-
 
 .interpolation-panel {
   background: #f5f5f5;
@@ -154,4 +158,80 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.instruction-box {
+  border-left: 4px solid #544e4c;
+}
+.box {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.equal-height-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure both boxes have the same height */
+}
+
+.equal-height-box img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Inner container must be wide enough to hold all images */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /* Adjust based on the number of images (50% width per image for 2 images) */
+}
+
+.carousel-inner img {
+  width: 50%; /* Each image takes 50% of the carousel width if there are 2 images */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Carousel Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 50%; /* Make buttons circular */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  cursor: pointer;
 }
