@@ -1,0 +1,48 @@
+{
+  "examples": [
+    {
+      "exampleNumber": 1,
+      "instruction": "<start of the annotation list>\n1. Text Annotations: \nDescription: Data-driven text annotations display values linked to the axis elements, such as maximum or minimum points for each attribute.\nPurpose: Highlight significant max, min, and average values to provide critical insights quickly.\nOther Uses: Non-data-driven annotations can describe each line type.\n\n2. Highlights: \nDescription: Use different colors for each glass type to distinguish them.\nPurpose: Helps in quickly identifying the different glass types and their properties.\n<end of the annotation list>\n\nGlass Chemical Composition Analysis\nShowing how different elements contribute to the type of glass using Parallel Coordinates.",
+      "qa": [
+        {
+          "question": "Would you like to include legends to explain the colors used for each glass type?",
+          "answer": "Yes, including legends would be helpful to understand the colors used for each glass type."
+        },
+        {
+          "question": "Do you want to include axis labels for each chemical attribute?",
+          "answer": "Yes, including axis labels for each chemical attribute would be good."
+        },
+        {
+          "question": "Would you like the chart to emphasize any particular glass type more than others?",
+          "answer": "I don't want to emphasize any particular glass type more than others."
+        },
+        {
+          "question": "Should we include a title and subtitle in the chart? If so, do you have specific text for them?",
+          "answer": "Yes, please include a title and subtitle. The title can be \"Glass Chemical Composition Analysis\" and the subtitle can be \"Highlighting significant max, min, and average values for each chemical attribute."
+        },
+        {
+          "question": "Would you like to include data point markers at the maximum, minimum, and average values?",
+          "answer": "Would you like to include data point markers at the maximum, minimum, and average values?"
+        }
+      ]
+    },
+    {
+      "exampleNumber": 2,
+      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "qa": [
+        {
+          "question": "Would you like the chart to have a title and, if so, what should it be?",
+          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+        },
+        {
+          "question": "Do you prefer to have grid lines on the chart for better readability?",
+          "answer": "Yes, grid lines would be helpful for better readability."
+        },
+        {
+          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
+          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+        }
+      ]
+    }
+  ]
+}

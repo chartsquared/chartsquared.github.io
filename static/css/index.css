@@ -196,11 +196,11 @@ body {
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 200%; /* Adjust based on the number of images (50% width per image for 2 images) */
+  width: 500%; /* Adjust based on the number of images (50% width per image for 2 images) */
 }
 
 .carousel-inner img {
-  width: 50%; /* Each image takes 50% of the carousel width if there are 2 images */
+  width: 20%; /* Each image takes 50% of the carousel width if there are 2 images */
   height: 100%;
   object-fit: cover;
 }
@@ -234,4 +234,23 @@ body {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   cursor: pointer;
+}
+
+.carousel-item {
+  text-align: center;
+  width: 100%; /* Each carousel item should take the full width */
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.image-title {
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.align-left {
+  text-align: left;
 }

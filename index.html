@@ -39,7 +39,8 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-  <script src="example.js"></script> 
+  <script src="tts_example.js"></script> 
+  <script src="ct_example.js"></script> 
 </head>
 <body>
 
@@ -91,7 +92,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://github.com/reiss-koh/PersonalEval"
+                <a href="https://github.com/chartaj/ChartAJ"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +107,24 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>ChartUIE-8K</span>
+                </a>
+              </span>
+              <!-- Add two new buttons here to navigate to sections -->
+              <span class="link-block">
+                <a href="#context-examples" class="external-link button is-normal is-rounded is-primary">
+                  <span class="icon">
+                    <i class="fas fa-arrow-down"></i>
+                  </span>
+                  <span>Go to Context Examples</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#tts-examples" class="external-link button is-normal is-rounded is-primary">
+                  <span class="icon">
+                    <i class="fas fa-arrow-down"></i>
+                  </span>
+                  <span>Go to TTS Examples</span>
                 </a>
               </span>
             </div>
@@ -157,24 +175,40 @@
   </div>
 </section>
 
-<section class="section">
+<section id="context-examples" class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3 has-text-weight-bold">Qualitative Examples</h2>
-        <p>Left is the original chart generation. Right is the post-feedback generation.</p>
-        <p>The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+        <h2 class="title is-3 has-text-weight-bold">Context-tuning Qualitative Examples</h2>
+        <p class="align-left">Left is the original chart generation. Right is the post-context-tuned generation.</p>
+        <p class="align-left">The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
       </div>
     </div>
 
     <!-- Dynamic Content Container -->
-    <div id="examples-container"></div>
+    <div id="context-examples-container"></div>
   </div>
 </section>
 
 <hr/>
 
-<section class="sectiont"></section>
+<section id="tts-examples" class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
+        <p class="align-left">Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+      </div>
+    </div>
+
+    <!-- Dynamic Content Container -->
+    <div id="tts-examples-container"></div>
+  </div>
+</section>
+
+<hr/>
+
+<section class="section">
   <div class="container" style="margin: 20px auto">
     <div class="content has-text-centered">
       <p style="color:#a0a0a0;">Source Code and Paper are under Apache-2.0 License © Authors</p>
@@ -199,7 +233,6 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
