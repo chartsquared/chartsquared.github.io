@@ -15,7 +15,7 @@ fetch("static/data.json")
       const exampleHTML = `
         <div class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
             <div class="column is-full-width">
-                <h3 class="title is-4">Example ${example.exampleNumber}</h3>
+                <h3 class="title is-3" style="font-weight: 900;">Example ${example.exampleNumber}</h3>
                 <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
                     <h2 class="title is-4">Initial User Instruction</h2>
                     <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
@@ -37,19 +37,19 @@ fetch("static/data.json")
                         <div class="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item">
-                                  <h4 class="image-title">CHARTAJ</h4>
+                                  <h4 class="image-title">Post-feedback w. ChartAJ</h4>
                                   <img src="static/Context_Tuning/Example1/autojudge_Extra_datas-19_(gpt).png" alt="Post-Feedback Image 1" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">ChartX AutoCoT + Self-Consistency</h4>
+                                  <h4 class="image-title">ChartX+A-CoT+SC</h4>
                                   <img src="static/Context_Tuning/Example1/chartx_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">MatplotAgent AutoCoT + Self-Consistency</h4>
+                                  <h4 class="image-title">MatPlotBench+A-CoT+SC </h4>
                                   <img src="static/Context_Tuning/Example1/matplotagent_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">Plot2code AutoCoT+Self-Consistency</h4>
+                                  <h4 class="image-title">Plot2Code+A-CoT+SC</h4>
                                   <img src="static/Context_Tuning/Example1/plot2code_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
                                 </div>
                                 <div class="carousel-item">
