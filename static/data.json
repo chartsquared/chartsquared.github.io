@@ -26,19 +26,19 @@
     },
     {
       "exampleNumber": 2,
-      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "instruction": "Create a bubble chart to visualize Ronaldo's Tweets Insight U0001F4CA data, where each bubble represents a tweet, with the x-axis as 'createdAt', the y-axis as 'likeCount', bubble size corresponding to 'retweetCount', and color-coded based on 'quoteCount', including labels and a legend for clarity to identify trends and high-engagement tweets over time.",
       "qa": [
         {
-          "question": "Would you like the chart to have a title and, if so, what should it be?",
-          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+          "question": "Would you like to include gridlines for better readability of the chart?",
+          "answer": "Yes, please include gridlines for better readability."
         },
         {
-          "question": "Do you prefer to have grid lines on the chart for better readability?",
-          "answer": "Yes, grid lines would be helpful for better readability."
+          "question": "Should the x-axis and y-axis be displayed with labels and ticks for specific intervals?",
+          "answer": "Yes, please display the x-axis and y-axis with labels and ticks for specific intervals."
         },
         {
-          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
-          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+          "question": "Should the chart have a title? If so, do you have a specific title in mind?",
+          "answer": "Yes, the chart should have a title. You can use \"Ronaldo''s Tweets Insight\"."
         }
       ],
       "pre_src": "static/Context_Tuning/Example2/294.png",
@@ -50,19 +50,23 @@
     },
     {
       "exampleNumber": 3,
-      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "instruction": "I have a dataset related to body fat prediction, capturing various health metrics like Density, BodyFat, Age, Weight, Height, and measurements of different body parts (Neck, Chest, Abdomen, etc.). I want to visualize this dataset using a Treemap. The Treemap should allow me to see the distribution and relationship of these measurements in terms of their data type and missing values. Can you help create this Treemap so I can have a comprehensive overview of how these attributes are spread and interrelated in the context of health and body composition? Thank you!",
       "qa": [
         {
-          "question": "Would you like the chart to have a title and, if so, what should it be?",
-          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+          "question": "How would you prefer to categorize or group the measurements in the Treemap, e.g., by ''body part'', ''measurement type'', or any other criteria?",
+          "answer": "By ''body part'' would be preferred."
         },
         {
-          "question": "Do you prefer to have grid lines on the chart for better readability?",
-          "answer": "Yes, grid lines would be helpful for better readability."
+          "question": "Should the Treemap highlight any particular attribute, such as missing values or unique values, more prominently?",
+          "answer": "Yes, please highlight missing values more prominently."
         },
         {
-          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
-          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+          "question": "Are there any specific attributes you want to exclude from the Treemap visualization?",
+          "answer": "No, I want to include all attributes in the visualization."
+        },
+        {
+          "question": "Do you prefer the labels on the Treemap tiles to be full names or abbreviated forms?",
+          "answer": "Full names would be preferred."
         }
       ],
       "pre_src": "static/Context_Tuning/Example3/152.png",
@@ -74,19 +78,19 @@
     },
     {
       "exampleNumber": 4,
-      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "instruction": "Create a heatmap to visualize employment growth trends within different industry groups using LinkedIn data. The axes should represent industry groups and their respective divisions, with color intensity indicating growth rates.",
       "qa": [
         {
-          "question": "Would you like the chart to have a title and, if so, what should it be?",
-          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+          "question": "Do you prefer a specific ordering (e.g., alphabetical, by growth rate) for the industry groups and divisions on the axes?",
+          "answer": "By growth rate would be best."
         },
         {
-          "question": "Do you prefer to have grid lines on the chart for better readability?",
-          "answer": "Yes, grid lines would be helpful for better readability."
+          "question": "Would you like to include a legend explaining the color intensities and corresponding growth rates?",
+          "answer": "Yes, include a legend explaining the color intensities and corresponding growth rates."
         },
         {
-          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
-          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+          "question": "Should the heatmap include both absolute and relative growth rates, or focus on one?",
+          "answer": "Focus on relative growth rates."
         }
       ],
       "pre_src": "static/Context_Tuning/Example4/4.png",
@@ -98,19 +102,23 @@
     },
     {
       "exampleNumber": 5,
-      "instruction": "Create a line chart visualizing the user ratings of bestselling books over different years. The x-axis should represent the years from 2009 to 2019, and the y-axis should show the user ratings. Highlight specific data points where the user rating is exceptionally high or low to draw attention. Add text annotations to these highlighted points to display the actual user rating and the book name. This visualization aims to show trends and fluctuations in book ratings over the years, helping identify patterns in user preferences. The chart should emphasize significant variations.",
+      "instruction": "I have ECG data representing various cardiac measurements for patients with possible cardiac ailments. I want to visualize the distribution of the heartbeats per minute (hbpermin) against the QT segment duration (QTseg) for different records. Please create a hexbin chart that displays the density of these two variables, with increased color intensity indicating higher data point density. This visualization should help identify common ranges and clusters in heartbeats and QT segment durations across the dataset. Ensure the hexbin chart highlights any potential outliers or patterns in the data. Thank you!",
       "qa": [
         {
-          "question": "Would you like the chart to have a title and, if so, what should it be?",
-          "answer": "Yes, the title should be \"Bestselling Books' User Ratings (2009-2019)\"."
+          "question": "Do you prefer a specific hexbin size or grid resolution?",
+          "answer": "I prefer a moderate hexbin size, nothing too small or too large."
         },
         {
-          "question": "Do you prefer to have grid lines on the chart for better readability?",
-          "answer": "Yes, grid lines would be helpful for better readability."
+          "question": "Would you like any specific labels or annotations on the chart?",
+          "answer": "Yes, labels for heartbeats per minute and QT segment duration would be helpful."
         },
         {
-          "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
-          "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
+          "question": "Should the axes have specific scales (e.g., linear, logarithmic)?",
+          "answer": "A linear scale should be fine for both axes."
+        },
+        {
+          "question": "Should there be any specific legends or captions included with the chart?",
+          "answer": "Yes, a legend indicating the density levels would be useful."
         }
       ],
       "pre_src": "static/Context_Tuning/Example5/256.png",
