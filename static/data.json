@@ -16,7 +16,13 @@
           "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
           "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
         }
-      ]
+      ],
+      "pre_src": "static/Context_Tuning/Example1/19.png",
+      "AJ_src": "static/Context_Tuning/Example1/autojudge_Extra_datas-19_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example1/chartx_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example1/chat-eval_Extra_datas-19_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example1/matplotagent_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example1/plot2code_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
     },
     {
       "exampleNumber": 2,
@@ -34,7 +40,13 @@
           "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
           "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
         }
-      ]
+      ],
+      "pre_src": "static/Context_Tuning/Example2/294.png",
+      "AJ_src": "static/Context_Tuning/Example2/autojudge_Extra_datas-294(claude).png",
+      "chartX_src": "static/Context_Tuning/Example2/chartx_Extra_datas-294_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example2/chat-eval_Extra_datas-294_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example2/matplotagent_Extra_datas-294_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example2/plot2code_Extra_datas-294_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
     },
     {
       "exampleNumber": 3,
@@ -52,7 +64,13 @@
           "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
           "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
         }
-      ]
+      ],
+      "pre_src": "static/Context_Tuning/Example3/152.png",
+      "AJ_src": "static/Context_Tuning/Example3/autojudge_Extra_datas-152(claude).png",
+      "chartX_src": "static/Context_Tuning/Example3/chartx_Extra_datas-152_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example3/chat-eval_Extra_datas-152_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example3/matplotagent_Extra_datas-152_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example3/plot2code_Extra_datas-152_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
     },
     {
       "exampleNumber": 4,
@@ -70,7 +88,13 @@
           "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
           "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
         }
-      ]
+      ],
+      "pre_src": "static/Context_Tuning/Example4/4.png",
+      "AJ_src": "static/Context_Tuning/Example4/autojudge_Extra_datas-4_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example4/chartx_Extra_datas-4_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example4/chat-eval_Extra_datas-4_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example4/matplotagent_Extra_datas-4_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example4/plot2code_Extra_datas-4_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
     },
     {
       "exampleNumber": 5,
@@ -88,7 +112,13 @@
           "question": "Should we include axis labels, and if so, do you have specific labels in mind for the x-axis and y-axis?",
           "answer": "Yes, please include axis labels. X-axis: \"Year\", Y-axis: \"User Rating\"."
         }
-      ]
+      ],
+      "pre_src": "static/Context_Tuning/Example5/256.png",
+      "AJ_src": "static/Context_Tuning/Example5/autojudge_Extra_datas-256_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example5/chartx_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example5/chat-eval_Extra_datas-256_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example5/matplotagent_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example5/plot2code_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
     }
   ]
 }

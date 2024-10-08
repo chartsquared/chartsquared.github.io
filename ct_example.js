@@ -17,10 +17,10 @@ fetch("static/data.json")
             <div class="column is-full-width">
                 <h3 class="title is-3" style="font-weight: 900;">Example ${example.exampleNumber}</h3>
                 <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
-                    <h2 class="title is-4">Initial User Instruction</h2>
+                    <h2 class="title is-5">Initial User Instruction</h2>
                     <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
                     <hr/>
-                    <h2 class="title is-4">Single Cycle QA w. User</h2>
+                    <h2 class="title is-5">Single Cycle QA with User</h2>
                     <div id="qa-content-${example.exampleNumber}" class="qa-content"></div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ fetch("static/data.json")
                 <div class="column is-half">
                     <div class="box equal-height-box">
                         <h3 class="title is-5 has-text-weight-bold">Pre-feedback</h3>
-                        <img src="static/Context_Tuning/Example1/19.png" alt="Pre-Feedback Image" />
+                        <img src="${example.pre_src}" alt="Pre-Feedback Image" />
                     </div>
                 </div>
 
@@ -37,24 +37,24 @@ fetch("static/data.json")
                         <div class="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item">
-                                  <h4 class="image-title">Post-feedback w. ChartAJ</h4>
-                                  <img src="static/Context_Tuning/Example1/autojudge_Extra_datas-19_(gpt).png" alt="Post-Feedback Image 1" />
+                                  <h4 class="image-title title is-5">Post-feedback with ChartAJ</h4>
+                                  <img src="${example.AJ_src}" alt="AJ Feedback Image" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">ChartX+A-CoT+SC</h4>
-                                  <img src="static/Context_Tuning/Example1/chartx_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
+                                  <h4 class="image-title title is-5">ChartX+A-CoT+SC</h4>
+                                  <img src="${example.chartX_src}" alt="ChartX Feedback Image" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">MatPlotBench+A-CoT+SC </h4>
-                                  <img src="static/Context_Tuning/Example1/matplotagent_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
+                                  <h4 class="image-title title is-5">MatPlotBench+A-CoT+SC </h4>
+                                  <img src="${example.matplot_src}" alt="Matplot Feedback Image" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">Plot2Code+A-CoT+SC</h4>
-                                  <img src="static/Context_Tuning/Example1/plot2code_Extra_datas-19_Self-Consistency-With-Auto-CoT(n=5)(gpt).png" alt="Post-Feedback Image 1" />
+                                  <h4 class="image-title title is-5">Plot2Code+A-CoT+SC</h4>
+                                  <img src="${example.plot2code_src}" alt="plot2code Feedback Image" />
                                 </div>
                                 <div class="carousel-item">
-                                  <h4 class="image-title">ChatEval</h4>
-                                  <img src="static/Context_Tuning/Example1/chat-eval_Extra_datas-19_Chat-Eval(base=2-debate=2)(gpt).png" alt="Post-Feedback Image 2" />
+                                  <h4 class="image-title title is-5">ChatEval</h4>
+                                  <img src="${example.ChatEval_src}" alt="ChatEval Feedback Image" />
                                 </div>
                             </div>
                             <button class="carousel-control-prev">‹</button>

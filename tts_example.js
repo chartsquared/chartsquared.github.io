@@ -14,12 +14,12 @@ fetch("static/ttsData.json")
       const exampleHTML = `
         <div class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
             <div class="column is-full-width">
-                <h3 class="title is-3" style="font-weight: 900;">Example ${example.exampleNumber}</h3>
+                <h3 class="title is-3">Example ${example.exampleNumber}</h3>
                 <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
-                    <h2 class="title is-4">Initial User Instruction</h2>
+                    <h2 class="title is-5">Initial User Instruction</h2>
                     <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
                     <hr/>
-                    <h2 class="title is-4">Single Cycle QA w. User</h2>
+                    <h2 class="title is-5">Single Cycle QA with User</h2>
                     <div id="qa-content-${example.exampleNumber}" class="qa-content"></div>
                 </div>
             </div>
@@ -27,13 +27,13 @@ fetch("static/ttsData.json")
                 <div class="column is-half">
                     <div class="box equal-height-box">
                         <h3 class="title is-5 has-text-weight-bold">Pre-feedback</h3>
-                        <img src="static/TTS/Example1/39_Extra_datas_0.png" alt="Pre-Feedback Image" />
+                        <img src="${example.pre_src}" alt="Pre-Feedback Image" />
                     </div>
                 </div>
                 <div class="column is-half">
                     <div class="box equal-height-box">
                         <h3 class="title is-5 has-text-weight-bold">Post-feedback</h3>
-                        <img src="static/TTS/Example1/39_Extra_datas_8.png" alt="Post-Feedback Image" />
+                        <img src="${example.post_src}" alt="Post-Feedback Image" />
                     </div>
                 </div>
             </div>

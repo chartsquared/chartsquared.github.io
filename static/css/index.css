@@ -160,26 +160,18 @@ body {
   border-radius: 5px;
 }
 
-.instruction-box {
-  border-left: 4px solid #544e4c;
-}
-.box {
-  background-color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
+/* Equal height for both the "Pre-feedback" and "Post-feedback" sections */
 .equal-height-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* Ensure both boxes have the same height */
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Increased height */
+  overflow: hidden;
 }
 
 .equal-height-box img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -196,61 +188,58 @@ body {
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 500%; /* Adjust based on the number of images (50% width per image for 2 images) */
+  width: 500%; /* Adjust based on the number of images */
 }
 
 .carousel-inner img {
-  width: 20%; /* Each image takes 50% of the carousel width if there are 2 images */
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Ensure image scales without distortion */
 }
 
 /* Carousel Buttons */
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 90%;
+  top: 95%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10; /* Keep buttons on top */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 1em;
+  padding: 0.5em; /* Adjust padding */
   cursor: pointer;
-  border-radius: 50%; /* Make buttons circular */
-  height: 40px;
-  width: 40px;
+  border-radius: 50%; /* Circular buttons */
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Keep buttons visible within the container */
 .carousel-control-prev {
-  left: 5px;
+  left: 0px; /* Adjust the button to be closer to the left edge */
 }
 
 .carousel-control-next {
-  right: 5px;
+  right: 0px; /* Adjust the button to be closer to the right edge */
 }
+
+/* Button hover effect */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
 }
 
 .carousel-item {
   text-align: center;
-  width: 100%; /* Each carousel item should take the full width */
-}
-
-.carousel-item img {
+  height: 100%;
   width: 100%;
-  object-fit: contain;
 }
 
 .image-title {
-  margin-bottom: 1px;
+  margin-bottom: 5px;
   font-weight: bold;
-}
-
-.align-left {
-  text-align: left;
 }

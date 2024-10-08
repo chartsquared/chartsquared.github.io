@@ -6,7 +6,7 @@
         content="ChartAJ: Rich AI Feedback for Chart Generation">
   <meta name="keywords" content="ChartAj, data generation, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChartAJ: Rich AI Feedback for Chart Generation</title>
+  <title>CHARTAJ and CHARTUIE-8K: Rich AI Feedback for Chart Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -49,7 +49,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CHARTUIE-8K and CHARTAJ:</h1>
+          <h1 class="title is-1 publication-title">CHARTAJ and CHARTUIE-8K:</h1>
           <h1 class="title is-1 publication-title">Rich AI Feedback for Chart Generation</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -143,31 +143,18 @@
         <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The scarcity of cheap, quality chart 
+            &langle;instruction, data, code, image&rangle;quadruplets continues to impede advancements in LLM-generated charts. 
+            In response, we introduce two novel contributions: <strong>ChartUIE-8K</strong>, a large-scale, user-centric evaluation dataset, and 
+            <strong>ChartAJ</strong>, the first effective reference-free auto-judge tailored towards chart generation feedback. 
+            <strong>ChartUIE-8K</strong> offers <em>diverse</em> and <em>realistic</em> queries, with over 8,000 queries, 
+            a significant increase in chart types, topics, and underlying data sets, compared to existing works. 
+            <strong>ChartAJ</strong> provides <em>rich</em> AI feedback, empowering models to improve through 
+            context-tuning and test-time scaling without the need for costly training data sets. Extensive 
+            <em>double-blind</em> studies confirm that <strong>ChartAJ</strong> delivers state-of-the-art performance in automatic evaluation, 
+            surpassing existing methods in <em>feedback efficacy per token cost</em>. 
+            Both contributions are open-source at <a href="http://chartaj.github.io">chartaj.github.io</a>, offering a substantial resource 
+            for future advancements in large language models and chart generation.
           </p>
         </div>
       </div>
@@ -180,7 +167,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3 has-text-weight-bold">Context-tuning Qualitative Examples</h2>
+        <h2 class="title is-2 has-text-weight-bold">Context-tuning Qualitative Examples</h2>
         <p class="align-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
       </div>
     </div>
@@ -196,7 +183,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
+        <h2 class="title is-2 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
         <p class="align-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
       </div>
     </div>
