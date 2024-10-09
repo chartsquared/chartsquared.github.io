@@ -2,6 +2,22 @@
   "examples": [
     {
       "exampleNumber": 1,
+      "instruction": "Create a bubble chart visualizing Cardano's daily trading data. Highlight key dates with significant volume and price changes. Use data-driven annotations for dates with the highest and lowest closing prices.",
+      "qa": [
+        {
+          "question": "How would you like the key dates with significant volume and price changes to be highlighted (e.g., different color, larger size, specific shapes)?",
+          "answer": "Different color would be great."
+        },
+        {
+          "question": "What annotations style do you prefer for the highest and lowest closing prices (e.g., labeled text, callouts, tooltips)?",
+          "answer": "Labeled text."
+        }
+      ],
+      "pre_src": "static/TTS/Example1/342_Extra_datas_0.png",
+      "post_src": "static/TTS/Example1/342_Extra_datas_8.png"
+    },
+    {
+      "exampleNumber": 2,
       "instruction": "<start of the annotation list>\n1. Text Annotations: \nDescription: Data-driven text annotations display values linked to the axis elements, such as maximum or minimum points for each attribute.\nPurpose: Highlight significant max, min, and average values to provide critical insights quickly.\nOther Uses: Non-data-driven annotations can describe each line type.\n\n2. Highlights: \nDescription: Use different colors for each glass type to distinguish them.\nPurpose: Helps in quickly identifying the different glass types and their properties.\n<end of the annotation list>\n\nGlass Chemical Composition Analysis\nShowing how different elements contribute to the type of glass using Parallel Coordinates.",
       "qa": [
         {
@@ -25,24 +41,8 @@
           "answer": "Would you like to include data point markers at the maximum, minimum, and average values?"
         }
       ],
-      "pre_src": "static/TTS/Example1/39_Extra_datas_0.png",
-      "post_src": "static/TTS/Example1/39_Extra_datas_8.png"
-    },
-    {
-      "exampleNumber": 2,
-      "instruction": "Create a bubble chart visualizing Cardano's daily trading data. Highlight key dates with significant volume and price changes. Use data-driven annotations for dates with the highest and lowest closing prices.",
-      "qa": [
-        {
-          "question": "How would you like the key dates with significant volume and price changes to be highlighted (e.g., different color, larger size, specific shapes)?",
-          "answer": "Different color would be great."
-        },
-        {
-          "question": "What annotations style do you prefer for the highest and lowest closing prices (e.g., labeled text, callouts, tooltips)?",
-          "answer": "Labeled text."
-        }
-      ],
-      "pre_src": "static/TTS/Example2/342_Extra_datas_0.png",
-      "post_src": "static/TTS/Example2/342_Extra_datas_8.png"
+      "pre_src": "static/TTS/Example2/39_Extra_datas_0.png",
+      "post_src": "static/TTS/Example2/39_Extra_datas_8.png"
     }
   ]
 }
