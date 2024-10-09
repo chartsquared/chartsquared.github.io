@@ -251,3 +251,25 @@ body {
   font-weight: bold;
   max-height: 15%;
 }
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block; /* Temporarily set to block to always show */
+  z-index: 9999; /* Higher z-index to ensure visibility */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #3273dc;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+#back-to-top-btn:hover {
+  background-color: #2758b4; /* Darker shade on hover */
+}

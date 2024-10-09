@@ -1,236 +1,263 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="ChartAJ: Rich AI Feedback for Chart Generation">
-  <meta name="keywords" content="ChartAj, data generation, ">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CHARTAJ and CHARTUIE-8K: Rich AI Feedback for Chart Generation</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="ChartAJ: Rich AI Feedback for Chart Generation">
+    <meta name="keywords" content="ChartAj, data generation, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHARTAJ and CHARTUIE-8K: Rich AI Feedback for Chart Generation</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-    gtag('js', new Date());
+      gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+      gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-  <script src="tts_example.js"></script> 
-  <script src="ct_example.js"></script> 
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="tts_example.js"></script> 
+    <script src="ct_example.js"></script> 
+  </head>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="margin-bottom: 0.2rem">ChartAJ and ChartUIE-8K:</h1>
-          <h1 class="title is-1 publication-title">Rich AI Feedback for Chart Generation</h1>
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://keunhong.com">Jang Han Yoon</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Woosung Koh</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Youngjin Song</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Minhyung Lee</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Jaegwan Cho</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Jaehyun Kang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Taehyeon Kim</a><sup>2</sup>
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Seyoung Yun</a><sup>2</sup>
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Youngjae Yu</a><sup>2</sup>
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Bongshin Lee</a><sup>2</sup>
-            </span>
-          </div>
+  <body>
+    <!-- Back to Top Button -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title" style="margin-bottom: 0.2rem">ChartAJ and ChartUIE-8K:</h1>
+              <h1 class="title is-1 publication-title">Rich AI Feedback for Chart Generation</h1>
+              <!-- <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://keunhong.com">Jang Han Yoon</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://utkarshsinha.com">Woosung Koh</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://jonbarron.info">Youngjin Song</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="http://sofienbouaziz.com">Minhyung Lee</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.danbgoldman.com">Jaegwan Cho</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://homes.cs.washington.edu/~seitz/">Jaehyun Kang</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="http://www.ricardomartinbrualla.com">Taehyeon Kim</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="http://www.ricardomartinbrualla.com">Seyoung Yun</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="http://www.ricardomartinbrualla.com">Youngjae Yu</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="http://www.ricardomartinbrualla.com">Bongshin Lee</a><sup>2</sup>
+                </span>
+              </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Yonsei,</span>
-          </div> -->
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-links">
-              <span class="author-block">Anonymous Authors</span>
-            </div>     
-          </div>     
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://github.com/chartaj/ChartAJ"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>University of Yonsei,</span>
+              </div> -->
+              <div class="column has-text-centered">
+                <div class="is-size-5 publication-links">
+                  <span class="author-block">Anonymous Authors</span>
+                </div>     
+              </div>     
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://github.com/chartaj/ChartAJ"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                      </a>
                   </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/chartaj/ChartAJ-and-ChartUIE-8K/tree/main/ChartUIE_8K"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-csv"></i>
+                  <!-- Dataset Link. -->
+                  <span class="link-block">
+                    <a href="https://github.com/chartaj/ChartAJ-and-ChartUIE-8K/tree/main/ChartUIE_8K"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-csv"></i>
+                      </span>
+                      <span>ChartUIE-8K</span>
+                    </a>
                   </span>
-                  <span>ChartUIE-8K</span>
-                </a>
-              </span>
-              <!-- Add two new buttons here to navigate to sections -->
-              <span class="link-block">
-                <a href="#context-examples" class="external-link button is-normal is-rounded is-primary">
-                  <span class="icon">
-                    <i class="fas fa-arrow-down"></i>
+                  <!-- Add two new buttons here to navigate to sections -->
+                  <span class="link-block">
+                    <a href="#context-examples" class="external-link button is-normal is-rounded is-primary">
+                      <span class="icon">
+                        <i class="fas fa-arrow-down"></i>
+                      </span>
+                      <span>Go to Context-tuning Examples</span>
+                    </a>
                   </span>
-                  <span>Go to Context-tuning Examples</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#tts-examples" class="external-link button is-normal is-rounded is-primary">
-                  <span class="icon">
-                    <i class="fas fa-arrow-down"></i>
+                  <span class="link-block">
+                    <a href="#tts-examples" class="external-link button is-normal is-rounded is-primary">
+                      <span class="icon">
+                        <i class="fas fa-arrow-down"></i>
+                      </span>
+                      <span>Go to Test-time Scaling Examples</span>
+                    </a>
                   </span>
-                  <span>Go to Test-time Scaling Examples</span>
-                </a>
-              </span>
+                </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The scarcity of cheap, quality chart 
-            &langle;instruction, data, code, image&rangle;quadruplets continues to impede advancements in LLM-generated charts. 
-            In response, we introduce two novel contributions: <strong>ChartUIE-8K</strong>, a large-scale, user-centric evaluation dataset, and 
-            <strong>ChartAJ</strong>, the first effective reference-free auto-judge tailored towards chart generation feedback. 
-            <strong>ChartUIE-8K</strong> offers <em>diverse</em> and <em>realistic</em> queries, with over 8,000 queries, 
-            a significant increase in chart types, topics, and underlying data sets, compared to existing works. 
-            <strong>ChartAJ</strong> provides <em>rich</em> AI feedback, empowering models to improve through 
-            context-tuning and test-time scaling without the need for costly training data sets. Extensive 
-            <em>double-blind</em> studies confirm that <strong>ChartAJ</strong> delivers state-of-the-art performance in automatic evaluation, 
-            surpassing existing methods in <em>feedback efficacy per token cost</em>. 
-            Both contributions are open-source at <a href="http://chartaj.github.io">chartaj.github.io</a>, offering a substantial resource 
-            for future advancements in large language models and chart generation.
-          </p>
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                The scarcity of cheap, quality chart 
+                &langle;instruction, data, code, image&rangle;quadruplets continues to impede advancements in LLM-generated charts. 
+                In response, we introduce two novel contributions: <strong>ChartUIE-8K</strong>, a large-scale, user-centric evaluation dataset, and 
+                <strong>ChartAJ</strong>, the first effective reference-free auto-judge tailored towards chart generation feedback. 
+                <strong>ChartUIE-8K</strong> offers <em>diverse</em> and <em>realistic</em> queries, with over 8,000 queries, 
+                a significant increase in chart types, topics, and underlying data sets, compared to existing works. 
+                <strong>ChartAJ</strong> provides <em>rich</em> AI feedback, empowering models to improve through 
+                context-tuning and test-time scaling without the need for costly training data sets. Extensive 
+                <em>double-blind</em> studies confirm that <strong>ChartAJ</strong> delivers state-of-the-art performance in automatic evaluation, 
+                surpassing existing methods in <em>feedback efficacy per token cost</em>. 
+                Both contributions are open-source at <a href="http://chartaj.github.io">chartaj.github.io</a>, offering a substantial resource 
+                for future advancements in large language models and chart generation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+      </div>
+    </section>
+
+    <section id="context-examples" class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-2 has-text-weight-bold">Context-tuning Qualitative Examples</h2>
+            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+          </div>
+        </div>
+
+        <!-- Dynamic Content Container -->
+        <div id="context-examples-container"></div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section id="tts-examples" class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-2 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
+            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+          </div>
+        </div>
+
+        <!-- Dynamic Content Container -->
+        <div id="tts-examples-container"></div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section class="section">
+      <div class="container" style="margin: 20px auto">
+        <div class="content has-text-centered">
+          <p style="color:#a0a0a0;">Source Code and Paper are under Apache-2.0 License © Authors</p>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+    </section>
 
-<section id="context-examples" class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-2 has-text-weight-bold">Context-tuning Qualitative Examples</h2>
-        <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{park2021nerfies,
+      author    = {Yoon, Jang Han and Koh, Woosung and Song, Youngjin and Lee, Minhyung and Cho, Jaegwan B and Kang, Jaehyun},
+      title     = {ChartAJ: Rich AI Feedback for Chart Generation},
+      journal   = {?},
+      year      = {2024},
+    }</code></pre>
       </div>
-    </div>
+    </section> -->
+    <button id="back-to-top-btn" class="button is-primary is-rounded" title="Go to top">
+      ↑ Top
+    </button>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
 
-    <!-- Dynamic Content Container -->
-    <div id="context-examples-container"></div>
-  </div>
-</section>
-
-<hr/>
-
-<section id="tts-examples" class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-2 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
-        <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback is provided. Left is the original chart generation. Right is the post-context-tuned generation. The right is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
-      </div>
-    </div>
-
-    <!-- Dynamic Content Container -->
-    <div id="tts-examples-container"></div>
-  </div>
-</section>
-
-<hr/>
-
-<section class="section">
-  <div class="container" style="margin: 20px auto">
-    <div class="content has-text-centered">
-      <p style="color:#a0a0a0;">Source Code and Paper are under Apache-2.0 License © Authors</p>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Yoon, Jang Han and Koh, Woosung and Song, Youngjin and Lee, Minhyung and Cho, Jaegwan B and Kang, Jaehyun},
-  title     = {ChartAJ: Rich AI Feedback for Chart Generation},
-  journal   = {?},
-  year      = {2024},
-}</code></pre>
-  </div>
-</section> -->
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+    <script>
+      // Get the button element
+      const backToTopBtn = document.getElementById("back-to-top-btn");
 
-</body>
+      // Function to show or hide the button based on scroll position
+      function scrollFunction() {
+        // Use document.documentElement.scrollTop or window.pageYOffset to detect scroll position
+        if (document.documentElement.scrollTop > 300 || window.pageYOffset > 300) {
+          backToTopBtn.style.display = "block"; // Show the button
+        } else {
+          backToTopBtn.style.display = "none"; // Hide the button
+        }
+      }
+
+      // Attach scroll event listener to the window
+      window.addEventListener("scroll", scrollFunction);
+
+      // Scroll to the top of the page when the button is clicked
+      backToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // Smooth scroll back to the top
+        });
+      });
+    </script>
+  </body>
 </html>
