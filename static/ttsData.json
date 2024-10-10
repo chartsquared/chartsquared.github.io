@@ -38,7 +38,7 @@
         },
         {
           "question": "Would you like to include data point markers at the maximum, minimum, and average values?",
-          "answer": "Would you like to include data point markers at the maximum, minimum, and average values?"
+          "answer": "Yes, it would be helpful to include data point markers at the maximum, minimum, and average values."
         }
       ],
       "pre_src": "static/TTS/Example2/39_Extra_datas_0.png",
