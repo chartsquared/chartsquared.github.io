@@ -14,7 +14,7 @@ fetch("static/data.json")
       // Create HTML structure for the example
       // Updated HTML structure for the right box (Post-feedback)
       const exampleHTML = `
-      <div class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
+      <div id="ct-example-${example.exampleNumber}" class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
           <div class="column is-full-width">
               <h3 class="title is-3" style="font-weight: 900;">Example ${example.exampleNumber}</h3>
               <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
