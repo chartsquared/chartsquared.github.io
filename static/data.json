@@ -102,31 +102,31 @@
     },
     {
       "exampleNumber": 5,
-      "instruction": "I have ECG data representing various cardiac measurements for patients with possible cardiac ailments. I want to visualize the distribution of the heartbeats per minute (hbpermin) against the QT segment duration (QTseg) for different records. Please create a hexbin chart that displays the density of these two variables, with increased color intensity indicating higher data point density. This visualization should help identify common ranges and clusters in heartbeats and QT segment durations across the dataset. Ensure the hexbin chart highlights any potential outliers or patterns in the data. Thank you!",
+      "instruction": "Visualize Ethereum historical data using a line chart. Highlight the trends in 'Price', 'Open', 'High', 'Low', and 'Change %' over time. Use text annotations to emphasize significant price changes and volume spikes. Focus on key dates with substantial price movements. Highlight different eras using various colors to show important trends and market shifts. Make sure to display dates and volatility explicitly to show periods of high trading activity. Use the annotations to provide context and commentary on major changes in Ethereum's market value, especially during notable fluctuations and events in blockchain history.",
       "qa": [
         {
-          "question": "Do you prefer a specific hexbin size or grid resolution?",
-          "answer": "I prefer a moderate hexbin size, nothing too small or too large."
+          "question": "Are there specific dates or events you would like to emphasize with text annotations",
+          "answer": "Yes, please emphasize the launch date of Ethereum, the 2017 bull run, the 2018 crash, the DeFi boom in 2020, and the 2021 bull run."
         },
         {
-          "question": "Would you like any specific labels or annotations on the chart?",
-          "answer": "Yes, labels for heartbeats per minute and QT segment duration would be helpful."
+          "question": "How would you like volatility to be displayed on the chart\u2014using lines, shaded areas, or another method?",
+          "answer": "Lines would be good for displaying volatility."
         },
         {
           "question": "Should the axes have specific scales (e.g., linear, logarithmic)?",
-          "answer": "A linear scale should be fine for both axes."
+          "answer": "Monthly would be best for date labels."
         },
         {
-          "question": "Should there be any specific legends or captions included with the chart?",
-          "answer": "Yes, a legend indicating the density levels would be useful."
+          "question": "Would you like to include a legend to explain the different colors and annotated features on the chart?",
+          "answer": "Yes, please include a legend to explain the different colors and annotated features on the chart."
         }
       ],
-      "pre_src": "static/Context_Tuning/Example5/256.png",
-      "AJ_src": "static/Context_Tuning/Example5/autojudge_Extra_datas-256_(gpt).png",
-      "chartX_src": "static/Context_Tuning/Example5/chartx_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
-      "ChatEval_src": "static/Context_Tuning/Example5/chat-eval_Extra_datas-256_Chat-Eval(base=2-debate=2)(gpt).png",
-      "matplot_src": "static/Context_Tuning/Example5/matplotagent_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
-      "plot2code_src": "static/Context_Tuning/Example5/plot2code_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
+      "pre_src": "static/Context_Tuning/Example5/343.png",
+      "AJ_src": "static/Context_Tuning/Example5/autojudge_Extra_datas-343_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example5/chartx_Extra_datas-343_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example5/chat-eval_Extra_datas-343_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example5/matplotagent_Extra_datas-343_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example5/plot2code_Extra_datas-343_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
     }
   ]
 }
