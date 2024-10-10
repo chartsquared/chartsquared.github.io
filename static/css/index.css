@@ -27,7 +27,7 @@ body {
 }
 
 .publication-title {
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0.2rem;
@@ -272,4 +272,8 @@ body {
 
 #back-to-top-btn:hover {
   background-color: #2758b4; /* Darker shade on hover */
+}
+
+.instruction-box {
+  padding: 8px;
 }

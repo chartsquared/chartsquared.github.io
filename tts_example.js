@@ -12,8 +12,8 @@ fetch("static/ttsData.json")
 
       // Create HTML structure for the example
       const exampleHTML = `
-        <div id="tts-example-${example.exampleNumber}" class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
-            <div class="column is-full-width">
+        <div class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
+            <div class="column is-full-width" style="padding: 15px 0px;">
                 <h3 class="title is-3">Example ${example.exampleNumber}</h3>
                 <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
                     <h2 class="title is-5">Initial User Instruction</h2>
@@ -26,13 +26,13 @@ fetch("static/ttsData.json")
             <div class="columns is-centered">
                 <div class="column is-half">
                     <div class="box equal-height-box">
-                        <h3 class="title is-5 has-text-weight-bold">Pre-feedback</h3>
+                        <h3 class="title is-5 has-text-weight-bold">Pre-TTS</h3>
                         <img src="${example.pre_src}" alt="Pre-Feedback Image" />
                     </div>
                 </div>
                 <div class="column is-half">
                     <div class="box equal-height-box">
-                        <h3 class="title is-5 has-text-weight-bold">Post-feedback</h3>
+                        <h3 class="title is-5 has-text-weight-bold">Post-TTS</h3>
                         <img src="${example.post_src}" alt="Post-Feedback Image" />
                     </div>
                 </div>
@@ -56,11 +56,11 @@ fetch("static/ttsData.json")
 
         const question = document.createElement("p");
         question.className = "qa-question";
-        question.textContent = `Q${index + 1}: ${item.question}`;
+        question.innerHTML = `<strong>Q${index + 1}:</strong> ${item.question}`;
 
         const answer = document.createElement("p");
         answer.className = "qa-answer";
-        answer.textContent = `A${index + 1}: ${item.answer}`;
+        answer.innerHTML = `<strong>A${index + 1}:</strong> ${item.answer}`;
 
         // Append question and answer to the qaItem
         qaItem.appendChild(question);

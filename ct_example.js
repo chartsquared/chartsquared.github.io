@@ -14,11 +14,11 @@ fetch("static/data.json")
       // Create HTML structure for the example
       // Updated HTML structure for the right box (Post-feedback)
       const exampleHTML = `
-      <div id="ct-example-${example.exampleNumber}" class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
-          <div class="column is-full-width">
-              <h3 class="title is-3" style="font-weight: 900;">Example ${example.exampleNumber}</h3>
+      <div class="columns is-centered hero is-light" style="margin-bottom: 2rem; padding: 10px; border-radius: 10px">
+          <div class="column is-full-width" style="padding: 15px 0px;">
+              <h3 class="title is-3">Example ${example.exampleNumber}</h3>
               <div id="instruction-box-${example.exampleNumber}" class="box instruction-box">
-                  <h2 class="title is-5">Initial User Instruction</h2>
+                  <h2 class="ins title is-5">Initial User Instruction</h2>
                   <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
                   <hr/>
                   <h2 class="title is-5">Single Cycle QA with User</h2>
@@ -43,6 +43,10 @@ fetch("static/data.json")
                                   <h4 class="image-title title is-5 method">ChartAJ</h4>
                               </div>
                               <div class="carousel-item">
+                                  <img src="${example.ChatEval_src}" alt="ChatEval Feedback Image" />
+                                  <h4 class="image-title title is-5 method">ChatEval</h4>
+                              </div>
+                              <div class="carousel-item">
                                   <img src="${example.chartX_src}" alt="ChartX Feedback Image" />
                                   <h4 class="image-title title is-5 method">ChartX+A-CoT+SC</h4>
                               </div>
@@ -53,10 +57,6 @@ fetch("static/data.json")
                               <div class="carousel-item">
                                   <img src="${example.plot2code_src}" alt="plot2code Feedback Image" />
                                   <h4 class="image-title title is-5 method">Plot2Code+A-CoT+SC</h4>
-                              </div>
-                              <div class="carousel-item">
-                                  <img src="${example.ChatEval_src}" alt="ChatEval Feedback Image" />
-                                  <h4 class="image-title title is-5 method">ChatEval</h4>
                               </div>
                           </div>
                           <button class="carousel-control-prev">‹</button>
@@ -82,11 +82,11 @@ fetch("static/data.json")
 
         const question = document.createElement("p");
         question.className = "qa-question";
-        question.textContent = `Q${index + 1}: ${item.question}`;
+        question.innerHTML = `<strong>Q${index + 1}:</strong> ${item.question}`;
 
         const answer = document.createElement("p");
         answer.className = "qa-answer";
-        answer.textContent = `A${index + 1}: ${item.answer}`;
+        answer.innerHTML = `<strong>A${index + 1}:</strong> ${item.answer}`;
 
         qaItem.appendChild(question);
         qaItem.appendChild(answer);
