@@ -27,9 +27,9 @@ body {
 }
 
 .publication-title {
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: wrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows */
   margin-bottom: 0.2rem;
 }
 
