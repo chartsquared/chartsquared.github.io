@@ -40,7 +40,7 @@ fetch("static/data.json")
                           <div class="carousel-inner">
                               <div class="carousel-item">
                                   <img src="${example.AJ_src}" alt="AJ Feedback Image" />
-                                  <h4 class="image-title title is-5 method">ChartAJ</h4>
+                                  <h4 class="image-title title is-5 method">ChartAF</h4>
                               </div>
                               <div class="carousel-item">
                                   <img src="${example.ChatEval_src}" alt="ChatEval Feedback Image" />
