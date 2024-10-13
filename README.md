@@ -1,3 +1,3 @@
-# chartaj.github.io
+# chartsquared.github.io
 
 test 1

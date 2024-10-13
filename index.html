@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description"
           content="C²: Scalable Auto-Feedback for LLM-based Chart Generation">
-    <meta name="keywords" content="ChartAj, data generation, ">
+    <meta name="keywords" content="ChartAF, data generation, ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>project site</title>
 
@@ -211,16 +211,13 @@
             <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                The scarcity of affordable, quality chart 
-                <span>&langle;instruction, data, code, image&rangle;</span> 
-                quadruplets continues to impede advancements in large language model (LLM)-generated charts.
-                In response, we introduce two novel contributions: <span style="font-variant: small-caps; font-weight: bold;">ChartAF</span>, the first effective reference-free auto-judge tailored towards chart generation feedback, 
-                and <span style="font-variant: small-caps; font-weight: bold;">ChartUIE-8K</span>, a large-scale, user-centric evaluation dataset. 
-                <span style="font-variant: small-caps; font-weight: bold;">ChartAF</span> provides <i>rich</i> AI feedback, empowering models to improve through in-context tuning and test-time scaling without the need for costly training datasets. 
-                <span style="font-variant: small-caps; font-weight: bold;">ChartUIE-8K</span> offers <i>diverse</i> and <i>realistic</i> queries, with over 8,000 queries, a significant increase in chart types, topics, and underlying datasets, compared to existing works.
-                Extensive <i>double-blind</i> studies confirm that both <span style="font-variant: small-caps; font-weight: bold;">ChartAF</span> and 
-                <span style="font-variant: small-caps; font-weight: bold;">ChartUIE-8K</span> are state-of-the-art tools. Both contributions are open-source at 
-                <a href="http://chartaj.github.io">chartaj.github.io</a>, offering a substantial resource for future advancements in LLMs and chart generation.
+                Generating high-quality charts with Large Language Models face substantial headwinds due to the lack of data, and <em>costly</em> nature of scaling such systems through human curation. 
+                &lt;instruction, data, code&gt; triplets are not widely available on the web, nor is it cheap to manually curate as it is a technically demanding task. We resolve this scalability challenge by providing a <em>reference-free</em> automatic feedback generator. The reference-free nature is <em>imperative</em> as reference-based feedback requires costly human curation. We demonstrate how to scale such a system via our novel framework, 
+                <strong><span style="font-variant: small-caps;">C<sup>2</sup></span></strong>, comprising of two synergistic components: <strong>ChartAF</strong> (Chart Auto-Feedback) and <strong>ChartUIE-8K</strong> (a cost-effective data set of over 8000 samples). The quantitative results of <strong><span style="font-variant: small-caps;">C<sup>2</sup></span></strong> are overwhelmingly positive. The first experiment shows that 
+                <strong>74%</strong> of respondents strongly prefer, and <strong>10.4%</strong> prefer, the post-feedback results. The second experiment demonstrates that <strong>ChartAF</strong> outperforms <strong>nine baselines</strong>. Moreover, 
+                <strong>ChartUIE-8K</strong> significantly increases data diversity by <strong>+5982%</strong>, <strong>+1936%</strong>, and <strong>+91%</strong> in queries, underlying data sets, and chart types, respectively, compared to benchmarks. 
+                Finally, an LLM user study confirms <strong>94%</strong> of participants <em>prefer</em> <strong>ChartUIE-8K</strong>'s queries, with <strong>93%</strong> finding it <em>realistic</em> and <em>aligned</em> with real-world use cases. All contributions are open-source at 
+                <a href="http://chartsquared.github.io" target="_blank">chartsquared.github.io</a>, with ample qualitative examples.
               </p>
             </div>
           </div>
@@ -234,7 +231,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h2 class="title is-3 has-text-weight-bold">In-context Tuning Qualitative Examples</h2>
-            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback outcome is provided. Left is the pre-feedback chart generation. Right is the post-context-tuned generation. The post-feedback section is a carousel, meaning you can press the arrows to compare ChartAJ with baselines.</p>
+            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback outcome is provided. Left is the pre-feedback chart generation. Right is the post-context-tuned generation. The post-feedback section is a carousel, meaning you can press the arrows to compare ChartAF with baselines.</p>
           </div>
         </div>
 
