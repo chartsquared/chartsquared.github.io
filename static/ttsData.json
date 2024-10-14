@@ -43,6 +43,86 @@
       ],
       "pre_src": "static/TTS/Example2/39_Extra_datas_0.png",
       "post_src": "static/TTS/Example2/39_Extra_datas_8.png"
+    },
+    {
+      "exampleNumber": 3,
+      "instruction": "Create a candlestick chart visualizing Meta company's stock data with specific text annotations highlighting data points from key dates, such as the opening and closing prices. Utilize highlights to emphasize significant changes in stock prices by altering the color of important candlesticks. The purpose is to offer a clear, visual trend of the company's stock performance over time, help in quick comparison, and draw attention to potentially impactful trading days. This chart aids in business analysis and strategic decision-making. Text annotations should also include notes for context where relevant, enhancing overall understanding.",
+      "qa": [
+        {
+          "question": "Are there any specific date ranges or key dates you want to ensure are annotated on the chart?",
+          "answer": "Yes, please annotate dates like earnings announcements, major product launches, or major market events specific to Meta."
+        },
+        {
+          "question": "Would you like to include any additional visual elements such as trend lines or moving averages?",
+          "answer": "Adding trend lines or moving averages would be helpful."
+        },
+        {
+          "question": "How detailed should the context notes be for the text annotations (e.g., brief tooltip vs. detailed description)?",
+          "answer": "Brief tooltips should be enough."
+        },
+        {
+          "question": "Do you want to include volume information on the same chart, perhaps as a secondary axis?",
+          "answer": "Yes, please include volume information on the same chart as a secondary axis."
+        }
+      ],
+      "pre_src": "static/TTS/Example3/354_Extra_datas_0.png",
+      "post_src": "static/TTS/Example3/354_Extra_datas_6.png"
+    },
+    {
+      "exampleNumber": 4,
+      "instruction": "Create a radar chart to compare different factors affecting students' adaptability in online education. Include variables like 'Gender', 'Age', 'Education Level', 'Institution Type', 'IT Student', 'Location', 'Financial Condition', 'Internet Type', etc.",
+      "qa": [
+        {
+          "question": "Should the radar chart include a legend to identify each variable?",
+          "answer": "Yes, please include a legend."
+        },
+        {
+          "question": "Would you prefer shaded areas or lines to represent the different factors on the radar chart?",
+          "answer": "I would prefer shaded areas."
+        }
+      ],
+      "pre_src": "static/TTS/Example4/358_Extra_datas_0.png",
+      "post_src": "static/TTS/Example4/358_Extra_datas_9.png"
+    },
+    {
+      "exampleNumber": 5,
+      "instruction": "Hi, I'd like to visualize survey results from Pizza Mercato regarding customer satisfaction. Can you create a dot plot for me? I want to see the correlation between the answers (Excellent, Good, Average, etc.) and the number of votes each answer received. Please display the votes on the y-axis and the different answers on the x-axis. Make sure that the dot sizes represent the percentage of total votes. For reference, the file named '477.csv' includes the necessary data. Thanks!",
+      "qa": [
+        {
+          "question": "Would you like to include labels on the dots indicating the exact percentage values?",
+          "answer": "Yes, please include labels on the dots indicating the exact percentage values."
+        },
+        {
+          "question": "Do you prefer a title for the chart? If yes, please specify the title.",
+          "answer": "Yes, the title should be \"Pizza Mercato Customer Satisfaction Survey Results.\""
+        },
+        {
+          "question": "Would you like gridlines on the chart to enhance readability?",
+          "answer": "Yes, include gridlines to enhance readability."
+        },
+        {
+          "question": "Is there a specific way you want the x-axis answers to be ordered (e.g., alphabetically, by number of votes)?",
+          "answer": "Order the x-axis answers by the number of votes, from highest to lowest."
+        },
+        {
+          "question": "Should the legend be included to explain the dot sizes representing the percentage of total votes?",
+          "answer": "Yes, please include a legend to explain the dot sizes."
+        }
+      ],
+      "pre_src": "static/TTS/Example5/477_Extra_datas_0.png",
+      "post_src": "static/TTS/Example5/477_Extra_datas_8.png"
+    },
+    {
+      "exampleNumber": 6,
+      "instruction": "Create a pictogram chart displaying the number of MdBs per party in the German Bundestag. Annotate special focus on The Left, SPD, and The Greens. Highlight these parties' data points by altering color or size to emphasize their significance. This will help in examining party distributions visually.",
+      "qa": [
+        {
+          "question": "Should the highlighted parties have emphasized sizes, or would you prefer color changes only?",
+          "answer": "I prefer color changes only."
+        }
+      ],
+      "pre_src": "static/TTS/Example6/482_Extra_datas_0.png",
+      "post_src": "static/TTS/Example6/482_Extra_datas_6.png"
     }
   ]
 }

@@ -127,6 +127,273 @@
       "ChatEval_src": "static/Context_Tuning/Example5/chat-eval_Extra_datas-343_Chat-Eval(base=2-debate=2)(gpt).png",
       "matplot_src": "static/Context_Tuning/Example5/matplotagent_Extra_datas-343_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
       "plot2code_src": "static/Context_Tuning/Example5/plot2code_Extra_datas-343_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
+    },
+    {
+      "exampleNumber": 6,
+      "instruction": "Create a dendrogram for the 2022 World Cup from Round of 16 to Final, emphasizing winners and scores. Highlight Argentina's path to victory. Add text annotations to provide match details like scores and teams involved.",
+      "qa": [
+        {
+          "question": " Do you prefer a horizontal or vertical layout for the dendrogram?",
+          "answer": "Horizontal layout."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example6/378.png",
+      "AJ_src": "static/Context_Tuning/Example6/autojudge_Extra_datas-378_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example6/chartx_Extra_datas-378_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example6/chat-eval_Extra_datas-378_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example6/matplotagent_Extra_datas-378_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example6/plot2code_Extra_datas-378_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
+    },
+    {
+      "exampleNumber": 7,
+      "instruction": "Create a network graph visualizing air travel between major US cities. Use nodes for cities, edges for routes, and different colors for regions. Show passenger weights. Include New York, Los Angeles, Chicago. Use sample data provided.",
+      "qa": [
+        {
+          "question": "What type of labels do you want on the nodes (e.g., city names, region, passenger count)?",
+          "answer": "City names and passenger count."
+        },
+        {
+          "question": "How should the weights of the routes be represented on the edges (e.g., thickness, color intensity)?",
+          "answer": "Thickness of the edges."
+        },
+        {
+          "question": "Would you like to include any legends or annotations to explain color coding and edge weights?",
+          "answer": "Yes, include legends or annotations."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example7/369.png",
+      "AJ_src": "static/Context_Tuning/Example7/autojudge_Extra_datas-369(claude).png",
+      "chartX_src": "static/Context_Tuning/Example7/chartx_Extra_datas-369_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example7/chat-eval_Extra_datas-369_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example7/matplotagent_Extra_datas-369_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example7/plot2code_Extra_datas-369_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 8,
+      "instruction": "Create a bubble chart visualizing Cardano's daily trading data. Highlight key dates with significant volume and price changes. Use data-driven annotations for dates with the highest and lowest closing prices.",
+      "qa": [
+        {
+          "question": " How would you like the key dates with significant volume and price changes to be highlighted (e.g., different color, larger size, specific shapes)?",
+          "answer": "Different color would be great."
+        },
+        {
+          "question": "What annotations style do you prefer for the highest and lowest closing prices(e.g., labeled text, callouts, tooltips)?",
+          "answer": "Labeled text."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example8/342.png",
+      "AJ_src": "static/Context_Tuning/Example8/autojudge_Extra_datas-342(claude).png",
+      "chartX_src": "static/Context_Tuning/Example8/chartx_Extra_datas-342_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example8/chat-eval_Extra_datas-342_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example8/matplotagent_Extra_datas-342_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example8/plot2code_Extra_datas-342_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 9,
+      "instruction": "I have ECG data representing various cardiac measurements for patients with possible cardiac ailments. I want to visualize the distribution of the heartbeats per minute (hbpermin) against the QT segment duration (QTseg) for different records. Please create a hexbin chart that displays the density of these two variables, with increased color intensity indicating higher data point density. This visualization should help identify common ranges and clusters in heartbeats and QT segment durations across the dataset. Ensure the hexbin chart highlights any potential outliers or patterns in the data. Thank you!",
+      "qa": [
+        {
+          "question": "Do you prefer a specific hexbin size or grid resolution?",
+          "answer": "I prefer a moderate hexbin size, nothing too small or too large."
+        },
+        {
+          "question": "Would you like any specific labels or annotations on the chart?",
+          "answer": "Yes, labels for heartbeats per minute and QT segment duration would be helpful."
+        },
+        {
+          "question": "Should the axes have specific scales (e.g., linear, logarithmic)?",
+          "answer": "A linear scale should be fine for both axes."
+        },
+        {
+          "question": "Would you like to include any reference lines or markers on the chart?",
+          "answer": "No specific reference lines or markers are needed."
+        },
+        {
+          "question": "Should there be any specific legends or captions included with the chart?",
+          "answer": "Yes, a legend indicating the density levels would be useful."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example9/256.png",
+      "AJ_src": "static/Context_Tuning/Example9/autojudge_Extra_datas-256(claude).png",
+      "chartX_src": "static/Context_Tuning/Example9/chartx_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example9/chat-eval_Extra_datas-256_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example9/matplotagent_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example9/plot2code_Extra_datas-256_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 10,
+      "instruction": "Create a word cloud from the SAP Press Releases dataset, highlighting the most frequent words in the headlines. Use different colors for better visual  effect and readability. Ensure the words \"SAP,\" \"Industry,\" and \"Cloud\" are prominent.",
+      "qa": [],
+      "pre_src": "static/Context_Tuning/Example10/218.png",
+      "AJ_src": "static/Context_Tuning/Example10/autojudge_Extra_datas-218_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example10/chartx_Extra_datas-218_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example10/chat-eval_Extra_datas-218_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example10/matplotagent_Extra_datas-218_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example10/plot2code_Extra_datas-218_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
+    },
+    {
+      "exampleNumber": 11,
+      "instruction": "Create a Sunburst chart visualizing the forest area data from the \"Global Forest Insights 1990-2020\" dataset by FAO. The chart should illustrate the hierarchical structure of the data, starting from the entire world, then breaking down into different regions or countries. Use the total land area, forest area proportions, and deforestation rates from 1990 to 2020 to show the changes over time. Highlight notable deforestation events and the proportion of total land area covered by forests in 2020. This will help in understanding the global and regional trends in forest cover and deforestation.",
+      "qa": [
+        {
+          "question": "Should notable deforestation events be highlighted with annotations or different shades/colors?",
+          "answer": "Yes, notable deforestation events should be highlighted with different shades/colors."
+        },
+        {
+          "question": "Do you prefer to display absolute values, percentages, or both for forest area proportions?",
+          "answer": "Both absolute values and percentages for forest area proportions."
+        },
+        {
+          "question": "How detailed do you want the regional breakdown to be? Should it go down to countries, sub-regions, or both?",
+          "answer": "Go down to countries."
+        },
+        {
+          "question": "Should the chart include any legends or labels? If so, what specific details should be included?",
+          "answer": "Yes, the chart should include legends or labels showing total land area, forest area proportion, and deforestation rates."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example11/95.png",
+      "AJ_src": "static/Context_Tuning/Example11/autojudge_Extra_datas-95(claude).png",
+      "chartX_src": "static/Context_Tuning/Example11/chartx_Extra_datas-95_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example11/chat-eval_Extra_datas-95_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example11/matplotagent_Extra_datas-95_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example11/plot2code_Extra_datas-95_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 12,
+      "instruction": "Glass Chemical Composition Analysis\nShowing how different elements contribute to the type of glass using Parallel Coordinates.",
+      "qa": [
+        {
+          "question": "Would you like to include legends to explain the colors used for each glass type?",
+          "answer": "Yes, including legends would be helpful to understand the colors used for each glass type."
+        },
+        {
+          "question": "Do you want to include axis labels for each chemical attribute?",
+          "answer": "Yes, including axis labels for each chemical attribute would be good."
+        },
+        {
+          "question": "Would you like the chart to emphasize any particular glass type more than others?",
+          "answer": "No, I don''t want to emphasize any particular glass type more than others."
+        },
+        {
+          "question": "Should we include a title and subtitle in the chart? If so, do you have specific text for them?",
+          "answer": "Yes, please include a title and subtitle. The title can be \"Glass Chemical Composition Analysis\" and the subtitle can be \"Highlighting significant max, min, and average values for each chemical attribute.\""
+        },
+        {
+          "question": "Would you like to include data point markers at the maximum, minimum, and average values?",
+          "answer": "Yes, it would be helpful to include data point markers at the maximum, minimum, and average values."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example12/39.png",
+      "AJ_src": "static/Context_Tuning/Example12/autojudge_Extra_datas-39_(gpt).png",
+      "chartX_src": "static/Context_Tuning/Example12/chartx_Extra_datas-39_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "ChatEval_src": "static/Context_Tuning/Example12/chat-eval_Extra_datas-39_Chat-Eval(base=2-debate=2)(gpt).png",
+      "matplot_src": "static/Context_Tuning/Example12/matplotagent_Extra_datas-39_Self-Consistency-With-Auto-CoT(n=5)(gpt).png",
+      "plot2code_src": "static/Context_Tuning/Example12/plot2code_Extra_datas-39_Self-Consistency-With-Auto-CoT(n=5)(gpt).png"
+    },
+    {
+      "exampleNumber": 13,
+      "instruction": "Create a heatmap to visualize the correlation between different features and car prices from the provided data. Highlight strong correlations to understand key price influencers.",
+      "qa": [
+        {
+          "question": "Would you like to display the correlation coefficients on the heatmap cells?",
+          "answer": "Yes, please display the correlation coefficients on the heatmap cells."
+        },
+        {
+          "question": "Should we include labels for both axes to clearly identify the features?",
+          "answer": "Yes, please include labels for both axes to clearly identify the features."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example13/22.png",
+      "AJ_src": "static/Context_Tuning/Example13/autojudge_Extra_datas-22(claude).png",
+      "chartX_src": "static/Context_Tuning/Example13/chartx_Extra_datas-22_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example13/chat-eval_Extra_datas-22_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example13/matplotagent_Extra_datas-22_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example13/plot2code_Extra_datas-22_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 14,
+      "instruction": "Create a pie chart using the given data, focusing on browser usage share. Highlight Chrome, Safari, and Internet Explorer & Edge segments for clarity. Add text annotations for their usage percentages right on the chart.",
+      "qa": [
+        {
+          "question": "Should the pie chart include a legend, or are the segment labels sufficient for clarity?",
+          "answer": "I think the segment labels should be sufficient for clarity."
+        },
+        {
+          "question": "Do you want the chart to display exact percentage values, or should it include additional information like absolute usage numbers?",
+          "answer": "Display the exact percentage values."
+        },
+        {
+          "question": "Would you like to include any title or subtitle on the pie chart for additional context?",
+          "answer": "Yes, include a title: \"Browser Usage Share\""
+        },
+        {
+          "question": "Are there any additional segments you want to be highlighted or emphasized apart from Chrome, Safari, and Internet Explorer & Edge?",
+          "answer": " No, just Chrome, Safari, and Internet Explorer & Edge."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example14/12.png",
+      "AJ_src": "static/Context_Tuning/Example14/autojudge_DataWrapper-12(claude).png",
+      "chartX_src": "static/Context_Tuning/Example14/chartx_DataWrapper-12_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example14/chat-eval_DataWrapper-12_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example14/matplotagent_DataWrapper-12_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example14/plot2code_DataWrapper-12_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 15,
+      "instruction": "Create a dumbbell chart to compare the votes for Clinton and Trump across different age categories. Use text annotations to highlight key differences and emphasize the age group trends.",
+      "qa": [
+        {
+          "question": "Would you prefer horizontal or vertical orientation for the dumbbell chart?",
+          "answer": "Horizontal orientation."
+        },
+        {
+          "question": "Should the text annotations include exact vote percentages, or just highlight the differences?",
+          "answer": "Just highlight the differences."
+        },
+        {
+          "question": "Do you prefer to include a title and subtitle for the chart, and if so, what should the text be?",
+          "answer": "Yes, please include a title. The title should be \"Voting Trends by Age Group in 2016 U.S. Presidential Election\"."
+        },
+        {
+          "question": "Should the age categories be sorted in ascending order, descending order, or in a specific order you provide?",
+          "answer": "Ascending order."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example15/4.png",
+      "AJ_src": "static/Context_Tuning/Example15/autojudge_DataWrapper-4(claude).png",
+      "chartX_src": "static/Context_Tuning/Example15/chartx_DataWrapper-4_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example15/chat-eval_DataWrapper-4_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example15/matplotagent_DataWrapper-4_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example15/plot2code_DataWrapper-4_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
+    },
+    {
+      "exampleNumber": 16,
+      "instruction": "I have data on malaria death rates from 1990 to 2016. I need a bubble chart to visualize this. Each bubble should represent a country, with the x-axis showing the years from 1990 to 2016, and the y-axis displaying the death rates per 100,000 people. The size of the bubbles should indicate the number of deaths. Please include all available countries in the dataset and ensure to highlight trends over these years. Missing values can be excluded.",
+      "qa": [
+        {
+          "question": "Would you like gridlines on the x-axis and y-axis to enhance readability?",
+          "answer": "Yes, please include gridlines."
+        },
+        {
+          "question": "Should the chart include a title and subtitles? If so, do you have specific wording in mind?",
+          "answer": "Yes, please include a title. \"Malaria Death Rates from 1990 to 2016\""
+        },
+        {
+          "question": "Do you prefer the bubbles to be semi-transparent to better view overlapping data points?",
+          "answer": "Yes, semi-transparent bubbles would be good."
+        },
+        {
+          "question": "Would you like to include a trend line to show the overall trend in death rates?",
+          "answer": "Yes, please include a trend line."
+        }
+      ],
+      "pre_src": "static/Context_Tuning/Example16/418.png",
+      "AJ_src": "static/Context_Tuning/Example16/autojudge_Extra_datas-418(claude).png",
+      "chartX_src": "static/Context_Tuning/Example16/chartx_Extra_datas-418_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "ChatEval_src": "static/Context_Tuning/Example16/chat-eval_Extra_datas-418_Chat-Eval(base=2-debate=2)(claude).png",
+      "matplot_src": "static/Context_Tuning/Example16/matplotagent_Extra_datas-418_Self-Consistency-With-Auto-CoT(n=5)(claude).png",
+      "plot2code_src": "static/Context_Tuning/Example16/plot2code_Extra_datas-418_Self-Consistency-With-Auto-CoT(n=5)(claude).png"
     }
   ]
 }

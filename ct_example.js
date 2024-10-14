@@ -21,7 +21,7 @@ fetch("static/data.json")
                   <h2 class="ins title is-5">Initial User Instruction</h2>
                   <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
                   <hr/>
-                  <h2 class="title is-5">Single Cycle QA with User</h2>
+                  <h2 class="title is-5">Extended User Instruction</h2>
                   <div id="qa-content-${example.exampleNumber}" class="qa-content"></div>
               </div>
           </div>
@@ -76,22 +76,36 @@ fetch("static/data.json")
       const qaContent = document.getElementById(
         `qa-content-${example.exampleNumber}`
       );
-      example.qa.forEach((item, index) => {
+      if (example.qa.length === 0) {
+        console.log("No questions available");
         const qaItem = document.createElement("div");
         qaItem.className = "qa-item";
 
         const question = document.createElement("p");
         question.className = "qa-question";
-        question.innerHTML = `<strong>Q${index + 1}:</strong> ${item.question}`;
-
-        const answer = document.createElement("p");
-        answer.className = "qa-answer";
-        answer.innerHTML = `<strong>A${index + 1}:</strong> ${item.answer}`;
-
+        question.innerHTML = "None Provided.";
         qaItem.appendChild(question);
-        qaItem.appendChild(answer);
         qaContent.appendChild(qaItem);
-      });
+      } else {
+        example.qa.forEach((item, index) => {
+          const qaItem = document.createElement("div");
+          qaItem.className = "qa-item";
+
+          const question = document.createElement("p");
+          question.className = "qa-question";
+          question.innerHTML = `<strong>Q${index + 1}:</strong> ${
+            item.question
+          }`;
+
+          const answer = document.createElement("p");
+          answer.className = "qa-answer";
+          answer.innerHTML = `<strong>A${index + 1}:</strong> ${item.answer}`;
+
+          qaItem.appendChild(question);
+          qaItem.appendChild(answer);
+          qaContent.appendChild(qaItem);
+        });
+      }
 
       // Carousel functionality (inside the loop)
       const carouselInner = exampleSection.querySelector(".carousel-inner");

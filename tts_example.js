@@ -19,7 +19,7 @@ fetch("static/ttsData.json")
                     <h2 class="title is-5">Initial User Instruction</h2>
                     <p id="instruction-text-${example.exampleNumber}">${example.instruction}</p>
                     <hr/>
-                    <h2 class="title is-5">Single Cycle QA with User</h2>
+                    <h2 class="title is-5">Extended User Instruction</h2>
                     <div id="qa-content-${example.exampleNumber}" class="qa-content"></div>
                 </div>
             </div>
