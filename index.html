@@ -289,18 +289,17 @@
             <h2 class="title is-3 has-text-weight-bold">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Generating high-quality charts with Large Language Models (LLMs) faces significant challenges due to limited data and the high cost of scaling through human curation. 
-                <span style="font-size: 1.2em;">&lang;</span>instruction, data, code<span style="font-size: 1.2em;">&rang;</span> triplets are scarce online and expensive to manually curate due to the technical expertise required. In this paper, we tackle this scalability issue by introducing a 
-                <em>reference-free</em> automatic feedback generator, which is crucial as reference-based feedback demands costly human intervention. Our novel framework, 
-                <strong><span style="font-variant: small-caps;">C<sup>2</sup></span></strong>, consists of two components: <strong>ChartAF</strong> (Chart Auto-Feedback) and 
-                <strong>ChartUIE-8K</strong> (a diverse, reference-free dataset). Quantitative results are compelling: in our first experiment, <strong>74%</strong> of respondents strongly preferred, and 
-                <strong>10%</strong> preferred, the results after feedback. The second experiment demonstrates that <strong>ChartAF</strong> outperforms <strong>nine baselines</strong>.
-                Moreover, <strong>ChartUIE-8K</strong> dramatically improves data diversity by increasing queries, datasets, and chart types by <strong>5982%</strong>, 
-                <strong>1936%</strong>, and <strong>91%</strong>, respectively, over benchmarks. Finally, an LLM user study revealed that <strong>94%</strong> of participants preferred 
-                <strong>ChartUIE-8K</strong>'s queries, with <strong>93%</strong> deeming them realistic and aligned with real-world use cases. All contributions are open-source at 
+                Generating high-quality charts with Large Language Models presents significant challenges due to limited data and the high cost of scaling through human curation.
+                <span style="font-size: 1.2em;">&lang;</span>instruction, data, code<span style="font-size: 1.2em;">&rang;</span> triplets are scarce and expensive to manually curate as their creation demands technical expertise.
+                To address this scalability issue, we introduce a <em>reference-free</em> automatic feedback generator, which eliminates the need for costly human intervention. Our novel framework, 
+                <strong><span style="font-variant: small-caps;">C<sup>2</sup></span></strong>, consists of (1) an automatic feedback provider (<strong>ChartAF</strong>) and (2) a diverse, reference-free dataset 
+                (<strong>ChartUIE-8K</strong>). Quantitative results are compelling: in our first experiment, <strong>74%</strong> of respondents strongly preferred, and 
+                <strong>10%</strong> preferred, the results after feedback. The second post-feedback experiment demonstrates that <strong>ChartAF</strong> outperforms 
+                <strong>nine baselines</strong>. Moreover, <strong>ChartUIE-8K</strong> significantly improves data diversity by increasing queries, datasets, and chart types by 
+                <strong>5982%</strong>, <strong>1936%</strong>, and <strong>91%</strong>, respectively, over benchmarks. Finally, an LLM user study revealed that <strong>94%</strong> of participants 
+                preferred <strong>ChartUIE-8K</strong>'s queries, with <strong>93%</strong> deeming them aligned with real-world use cases. Core contributions are available as open-source at an 
                 <a href="http://chartsquared.github.io" target="_blank">anonymized project site</a>, with ample qualitative examples.
-              </p>
-              
+              </p>           
             </div>
           </div>
         </div>
@@ -313,7 +312,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h2 class="title is-3 has-text-weight-bold">In-context Tuning Qualitative Examples</h2>
-            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback chart is provided. Left is the pre-feedback chart generation. Right is the post--in-context tuned generation. The post-feedback section is a carousel, meaning you can <strong>press the arrows</strong> to compare ChartAF with baselines.</p>
+            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-feedback chart is provided. Left is the pre-feedback chart generation. Right is the post--in-context tuned generation. The post-feedback section is a carousel, meaning you can <strong>press the arrows</strong> to compare ChartAF with baselines. These representative examples were taken directly from our human study.</p>
           </div>
         </div>
 
@@ -329,7 +328,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <h2 class="title is-3 has-text-weight-bold">Test-time Scaling Qualitative Examples</h2>
-            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-TTS outcome is provided. Left is the pre-TTS chart generation. Right is the post-TTS generation.</p>
+            <p class="align-left has-text-left">First, a ChartUIE-8K query is provided, then, the pre- and post-TTS outcome is provided. Left is the pre-TTS chart generation. Right is the post-TTS generation. These representative examples were taken directly from our human study.</p>
           </div>
         </div>
 
